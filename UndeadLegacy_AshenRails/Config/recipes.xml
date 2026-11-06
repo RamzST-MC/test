@@ -1,0 +1,156 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="ad2RailTrackVariantHelper" count="1" craft_time="20" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="ulmResourcePlank" count="3"/>
+		</recipe>
+		<recipe name="ad2RailRampVariantHelper" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="ad2RailTrackVariantHelper" count="3"/>
+			<ingredient name="resourceConcreteMix" count="60"/>
+		</recipe>
+		<recipe name="ad2RailBarrier" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+		<recipe name="ad2RailBufferStop" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="ulmResourcePlank" count="10"/>
+			<ingredient name="resourcePaint" count="2"/>
+		</recipe>
+		<recipe name="ad2RailTerminal" count="1" craft_time="60" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+		<recipe name="ad2RailWagonLore" count="1" craft_time="60" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="ulmResourcePlank" count="40"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+		<recipe name="ad2RailSwitchVariantHelper" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="ad2RailTrackVariantHelper" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+		</recipe>
+		<recipe name="ad2RailModCruise" count="1" craft_time="45" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		<recipe name="ad2RailModTimetable" count="1" craft_time="45" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		<recipe name="ad2RailLocoPlaceable" count="1" craft_time="120" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="ulmSmallEngine" count="1"/>
+			<ingredient name="ulmCarBattery" count="1"/>
+		</recipe>
+		<recipe name="ad2RailRepairKitRunningGear" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="13"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="ad2RailRepairKitEngine" count="1" craft_time="30" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="13"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="ad2RailWagonFlatcar" count="1" craft_time="90" craft_area="ulmStationMechanic_1" tags="learnable">
+			<ingredient name="resourceForgedIron" count="30"/>
+			<ingredient name="ulmResourcePlank" count="40"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+		</recipe>
+	</append>
+	<append xpath="/recipes">
+		<research name="researchAshenRails" area="ulmStationResearch_1" pos="0,5" parent="researchMinibike" icon="ad2RailLocoPlaceable" size="large">
+			<unlocks name="ad2RailTrackVariantHelper"/>
+			<ingredient name="ulmResourceResearch" count="250"/>
+			<ingredient name="ulmResourceResearchEngineering" count="250"/>
+			<ingredient name="ulmResourceBook" count="10"/>
+			<ingredient name="ulmSmallEngine"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+			<ingredient name="ulmResourceNutsAndBolts" count="30"/>
+			<ingredient name="ulmResourceScrapRubber" count="40"/>
+			<ingredient name="resourceOil" count="2"/>
+			<ingredient name="resourceDuctTape" count="6"/>
+		</research>
+		<research name="ad2RailSwitchVariantHelper" area="ulmStationResearch_1" pos="0,2" parent="researchAshenRails">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="ad2RailTrackVariantHelper" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+		</research>
+		<research name="ad2RailRampVariantHelper" area="ulmStationResearch_1" pos="2,0" parent="ad2RailSwitchVariantHelper" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="ad2RailTrackVariantHelper" count="3"/>
+			<ingredient name="resourceConcreteMix" count="60"/>
+		</research>
+		<research name="ad2RailBufferStop" area="ulmStationResearch_1" pos="2,0" parent="ad2RailRampVariantHelper" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="ulmResourcePlank" count="10"/>
+			<ingredient name="resourcePaint" count="2"/>
+		</research>
+		<research name="ad2RailBarrier" area="ulmStationResearch_1" pos="0,1.6" parent="ad2RailSwitchVariantHelper">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</research>
+		<research name="ad2RailTerminal" area="ulmStationResearch_1" pos="2,0" parent="ad2RailBarrier" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</research>
+		<research name="ad2RailLocoPlaceable" area="ulmStationResearch_1" pos="0,1.6" parent="ad2RailBarrier">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="ulmSmallEngine"/>
+			<ingredient name="ulmCarBattery"/>
+		</research>
+		<research name="ad2RailModCruise" area="ulmStationResearch_1" pos="2,0" parent="ad2RailLocoPlaceable" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</research>
+		<research name="ad2RailModTimetable" area="ulmStationResearch_1" pos="2,0" parent="ad2RailModCruise" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</research>
+		<research name="ad2RailWagonLore" area="ulmStationResearch_1" pos="0,1.6" parent="ad2RailLocoPlaceable">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="ulmResourcePlank" count="40"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</research>
+		<research name="ad2RailWagonFlatcar" area="ulmStationResearch_1" pos="2,0" parent="ad2RailWagonLore" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<ingredient name="ulmResourcePlank" count="40"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+		</research>
+		<research name="ad2RailRepairKitRunningGear" area="ulmStationResearch_1" pos="0,1.6" parent="ad2RailWagonLore">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedSteel" count="13"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</research>
+		<research name="ad2RailRepairKitEngine" area="ulmStationResearch_1" pos="2,0" parent="ad2RailRepairKitRunningGear" link_type="H">
+			<ingredient name="ulmResourceResearchEngineering" count="100"/>
+			<ingredient name="resourceForgedSteel" count="13"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</research>
+	</append>
+</configs>

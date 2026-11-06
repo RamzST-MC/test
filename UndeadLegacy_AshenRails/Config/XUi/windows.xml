@@ -1,0 +1,440 @@
+<configs>
+	<append xpath="/windows">
+		<window name="windowAD2RailHud" pos="-574,112" width="1148" height="106" anchor="CenterBottom" controller="AD2RailHud, AD2Railroads" visible="{railhud_visible}">
+			<sprite depth="0" name="plate" sprite="ad2RailHudPlate" type="sliced" width="1148" height="106" color="[white]"/>
+			<rect name="speed" pos="12,-5" width="84" height="96">
+				<sprite depth="1" sprite="ad2RailHudHexBack" width="84" height="96"/>
+				<sprite depth="2" sprite="ad2RailHudHexFill" width="84" height="96" color="225,105,30,230" type="filled" filldirection="vertical" fill="{railhud_speedfill}"/>
+				<sprite depth="3" sprite="ad2RailHudHexFrame" width="84" height="96"/>
+				<label depth="4" pos="42,-38" width="80" height="36" font_size="32" color="[white]" justify="center" pivot="center" effect="outline" text="{railhud_speed}"/>
+				<label depth="4" pos="42,-66" width="80" height="22" font_size="18" color="255,165,70" justify="center" pivot="center" effect="outline" text_key="ad2RailHudKmh"/>
+			</rect>
+			<label depth="2" pos="110,-14" width="110" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudFuel"/>
+			<sprite depth="1" pos="110,-42" width="170" height="12" sprite="menu_empty" color="16,13,11,230"/>
+			<sprite depth="2" pos="110,-42" width="170" height="12" sprite="menu_empty" color="230,150,45,255" type="filled" filldirection="horizontal" fill="{railhud_fuelfill}"/>
+			<label depth="2" pos="290,-14" width="70" height="26" font_size="21" color="[white]" effect="outline" justify="right" text="{railhud_fuel}"/>
+			<label depth="2" pos="110,-60" width="110" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudHealth"/>
+			<sprite depth="1" pos="110,-88" width="170" height="12" sprite="menu_empty" color="16,13,11,230"/>
+			<sprite depth="2" pos="110,-88" width="170" height="12" sprite="menu_empty" color="200,45,30,255" type="filled" filldirection="horizontal" fill="{railhud_healthfill}"/>
+			<label depth="2" pos="290,-60" width="70" height="26" font_size="21" color="[white]" effect="outline" justify="right" text="{railhud_health}"/>
+			<sprite depth="1" pos="376,-12" width="2" height="82" sprite="menu_empty" color="225,105,30,150"/>
+			<label depth="2" pos="392,-10" width="130" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudSwitch"/>
+			<label depth="2" pos="522,-10" width="240" height="26" font_size="22" color="[white]" effect="outline" justify="left" text="{railhud_switch}"/>
+			<label depth="2" pos="392,-40" width="130" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudBarrier"/>
+			<label depth="2" pos="522,-40" width="240" height="26" font_size="22" color="[white]" effect="outline" justify="left" text="{railhud_barriers}"/>
+			<label depth="2" pos="392,-70" width="130" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudCruise"/>
+			<label depth="2" pos="522,-70" width="240" height="26" font_size="22" color="[white]" effect="outline" justify="left" text="{railhud_cruise}"/>
+			<sprite depth="1" pos="772,-12" width="2" height="82" sprite="menu_empty" color="225,105,30,150"/>
+			<rect pos="788,-10" width="350" height="26" visible="{railhud_wagon_visible}">
+				<label depth="2" pos="0,0" width="190" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudWagons"/>
+				<sprite depth="2" pos="196,-6" width="14" height="14" sprite="menu_empty" color="{railhud_wagon_color}"/>
+				<label depth="2" pos="218,0" width="140" height="26" font_size="22" color="{railhud_wagon_color}" effect="outline" justify="left" text="{railhud_wagon_state}"/>
+			</rect>
+			<label depth="2" pos="788,-40" width="130" height="26" font_size="21" color="255,165,70" effect="outline" justify="left" text_key="ad2RailHudLight"/>
+			<label depth="2" pos="918,-40" width="210" height="26" font_size="22" color="[white]" effect="outline" justify="left" text="{railhud_light}"/>
+			<label depth="2" pos="788,-68" width="350" height="22" font_size="17" color="210,200,190" effect="outline" justify="left" text="{railhud_keys_switch}"/>
+			<label depth="2" pos="788,-86" width="350" height="22" font_size="17" color="210,200,190" effect="outline" justify="left" text="{railhud_keys_barrier}"/>
+		</window>
+		<window name="windowAD2RailTerminal" anchor="CenterCenter" pos="-500,320" width="1000" height="640" controller="AD2RailTerminalWindow, AD2Railroads" cursor_area="true">
+			<sprite depth="1" name="bezel" sprite="menu_empty" color="38,38,34,255" type="sliced"/>
+			<sprite depth="2" name="bezelEdge" sprite="menu_empty3px" color="16,16,14,255" type="sliced" fillcenter="false"/>
+			<sprite depth="3" name="screen" pos="24,-24" width="952" height="592" sprite="ad2RailTermScreen"/>
+			<label depth="5" name="header" pos="60,-46" width="880" height="36" font_size="30" color="90,255,130,255" text_key="ad2RailTermHeader"/>
+			<sprite depth="5" name="headerLine" pos="60,-88" width="880" height="2" sprite="menu_empty" color="60,190,90,200"/>
+			<label depth="5" name="screenText" pos="60,-104" width="880" height="380" font_size="24" color="90,255,130,255" text="{term_text}"/>
+			<textfield depth="6" name="nameInput" pos="60,-440" width="560" height="40" font_size="28" character_limit="24" open_vk_on_open="false" focus_on_open="false" clear_button="false" visible="{term_input_visible}"/>
+			<rect depth="6" pos="60,-524" width="300" height="50" visible="{term_btn1_visible}">
+				<button depth="1" name="btn1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="300" height="32" justify="center" font_size="28" color="90,255,130,255" text="{term_btn1_text}"/>
+			</rect>
+			<rect depth="6" pos="380,-524" width="300" height="50" visible="{term_btn2_visible}">
+				<button depth="1" name="btn2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="300" height="32" justify="center" font_size="28" color="90,255,130,255" text="{term_btn2_text}"/>
+			</rect>
+			<rect depth="6" pos="720,-524" width="220" height="50" visible="{term_help_visible}">
+				<button depth="1" name="btnHelp" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="220" height="32" justify="center" font_size="28" color="90,255,130,255" text_key="ad2RailTermBtnHelp"/>
+			</rect>
+			<sprite depth="9" name="scanlines" pos="24,-24" width="952" height="592" sprite="ad2RailTermScanlines"/>
+		</window>
+		<window name="windowAD2RailConsole" anchor="CenterCenter" pos="-700,420" width="1400" height="840" controller="AD2RailConsoleWindow, AD2Railroads" cursor_area="true">
+			<sprite depth="1" name="bezel" sprite="menu_empty" color="38,38,34,255" type="sliced"/>
+			<sprite depth="2" name="bezelEdge" sprite="menu_empty3px" color="16,16,14,255" type="sliced" fillcenter="false"/>
+			<sprite depth="3" name="screen" pos="24,-24" width="1352" height="792" sprite="ad2RailTermScreen"/>
+			<label depth="5" name="header" pos="60,-46" width="1280" height="36" font_size="30" color="90,255,130,255" text_key="ad2RailConsoleHeader"/>
+			<sprite depth="5" name="headerLine" pos="60,-88" width="1280" height="2" sprite="menu_empty" color="60,190,90,200"/>
+			<label depth="5" pos="60,-104" width="810" height="30" font_size="24" color="90,255,130,170" text_key="ad2RailConsoleTrain"/>
+			<label depth="5" pos="910,-104" width="430" height="30" font_size="24" color="90,255,130,170" text_key="ad2RailConsoleInventory"/>
+			<sprite depth="5" pos="890,-104" width="2" height="590" sprite="menu_empty" color="60,190,90,120"/>
+			<label depth="5" pos="60,-160" width="810" height="30" font_size="24" color="90,255,130,255" text_key="ad2RailConsoleEmpty" visible="{con_empty}"/>
+			<label depth="5" pos="910,-160" width="430" height="30" font_size="24" color="90,255,130,255" text_key="ad2RailConsoleNone" visible="{con_none}"/>
+			<label depth="5" pos="60,-160" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w0}" visible="{con_w_vis0}"/>
+			<rect depth="6" pos="490,-150" width="100" height="44" visible="{con_edit_vis0}">
+				<button depth="1" name="up0" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-150" width="120" height="44" visible="{con_edit_vis0}">
+				<button depth="1" name="down0" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-150" width="140" height="44" visible="{con_edit_vis0}">
+				<button depth="1" name="off0" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-160" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i0}" visible="{con_i_vis0}"/>
+			<rect depth="6" pos="1190,-150" width="150" height="44" visible="{con_i_vis0}">
+				<button depth="1" name="on0" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-216" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w1}" visible="{con_w_vis1}"/>
+			<rect depth="6" pos="490,-206" width="100" height="44" visible="{con_edit_vis1}">
+				<button depth="1" name="up1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-206" width="120" height="44" visible="{con_edit_vis1}">
+				<button depth="1" name="down1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-206" width="140" height="44" visible="{con_edit_vis1}">
+				<button depth="1" name="off1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-216" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i1}" visible="{con_i_vis1}"/>
+			<rect depth="6" pos="1190,-206" width="150" height="44" visible="{con_i_vis1}">
+				<button depth="1" name="on1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-272" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w2}" visible="{con_w_vis2}"/>
+			<rect depth="6" pos="490,-262" width="100" height="44" visible="{con_edit_vis2}">
+				<button depth="1" name="up2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-262" width="120" height="44" visible="{con_edit_vis2}">
+				<button depth="1" name="down2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-262" width="140" height="44" visible="{con_edit_vis2}">
+				<button depth="1" name="off2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-272" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i2}" visible="{con_i_vis2}"/>
+			<rect depth="6" pos="1190,-262" width="150" height="44" visible="{con_i_vis2}">
+				<button depth="1" name="on2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-328" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w3}" visible="{con_w_vis3}"/>
+			<rect depth="6" pos="490,-318" width="100" height="44" visible="{con_edit_vis3}">
+				<button depth="1" name="up3" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-318" width="120" height="44" visible="{con_edit_vis3}">
+				<button depth="1" name="down3" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-318" width="140" height="44" visible="{con_edit_vis3}">
+				<button depth="1" name="off3" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-328" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i3}" visible="{con_i_vis3}"/>
+			<rect depth="6" pos="1190,-318" width="150" height="44" visible="{con_i_vis3}">
+				<button depth="1" name="on3" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-384" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w4}" visible="{con_w_vis4}"/>
+			<rect depth="6" pos="490,-374" width="100" height="44" visible="{con_edit_vis4}">
+				<button depth="1" name="up4" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-374" width="120" height="44" visible="{con_edit_vis4}">
+				<button depth="1" name="down4" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-374" width="140" height="44" visible="{con_edit_vis4}">
+				<button depth="1" name="off4" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-384" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i4}" visible="{con_i_vis4}"/>
+			<rect depth="6" pos="1190,-374" width="150" height="44" visible="{con_i_vis4}">
+				<button depth="1" name="on4" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-440" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w5}" visible="{con_w_vis5}"/>
+			<rect depth="6" pos="490,-430" width="100" height="44" visible="{con_edit_vis5}">
+				<button depth="1" name="up5" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-430" width="120" height="44" visible="{con_edit_vis5}">
+				<button depth="1" name="down5" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-430" width="140" height="44" visible="{con_edit_vis5}">
+				<button depth="1" name="off5" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-440" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i5}" visible="{con_i_vis5}"/>
+			<rect depth="6" pos="1190,-430" width="150" height="44" visible="{con_i_vis5}">
+				<button depth="1" name="on5" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-496" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w6}" visible="{con_w_vis6}"/>
+			<rect depth="6" pos="490,-486" width="100" height="44" visible="{con_edit_vis6}">
+				<button depth="1" name="up6" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-486" width="120" height="44" visible="{con_edit_vis6}">
+				<button depth="1" name="down6" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-486" width="140" height="44" visible="{con_edit_vis6}">
+				<button depth="1" name="off6" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-496" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i6}" visible="{con_i_vis6}"/>
+			<rect depth="6" pos="1190,-486" width="150" height="44" visible="{con_i_vis6}">
+				<button depth="1" name="on6" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-552" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w7}" visible="{con_w_vis7}"/>
+			<rect depth="6" pos="490,-542" width="100" height="44" visible="{con_edit_vis7}">
+				<button depth="1" name="up7" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-542" width="120" height="44" visible="{con_edit_vis7}">
+				<button depth="1" name="down7" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-542" width="140" height="44" visible="{con_edit_vis7}">
+				<button depth="1" name="off7" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-552" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i7}" visible="{con_i_vis7}"/>
+			<rect depth="6" pos="1190,-542" width="150" height="44" visible="{con_i_vis7}">
+				<button depth="1" name="on7" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-608" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w8}" visible="{con_w_vis8}"/>
+			<rect depth="6" pos="490,-598" width="100" height="44" visible="{con_edit_vis8}">
+				<button depth="1" name="up8" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-598" width="120" height="44" visible="{con_edit_vis8}">
+				<button depth="1" name="down8" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-598" width="140" height="44" visible="{con_edit_vis8}">
+				<button depth="1" name="off8" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-608" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i8}" visible="{con_i_vis8}"/>
+			<rect depth="6" pos="1190,-598" width="150" height="44" visible="{con_i_vis8}">
+				<button depth="1" name="on8" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" pos="60,-664" width="420" height="30" font_size="24" color="90,255,130,255" text="{con_w9}" visible="{con_w_vis9}"/>
+			<rect depth="6" pos="490,-654" width="100" height="44" visible="{con_edit_vis9}">
+				<button depth="1" name="up9" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="100" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnUp"/>
+			</rect>
+			<rect depth="6" pos="600,-654" width="120" height="44" visible="{con_edit_vis9}">
+				<button depth="1" name="down9" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="120" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnDown"/>
+			</rect>
+			<rect depth="6" pos="730,-654" width="140" height="44" visible="{con_edit_vis9}">
+				<button depth="1" name="off9" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="140" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOff"/>
+			</rect>
+			<label depth="5" pos="910,-664" width="270" height="30" font_size="24" color="90,255,130,255" text="{con_i9}" visible="{con_i_vis9}"/>
+			<rect depth="6" pos="1190,-654" width="150" height="44" visible="{con_i_vis9}">
+				<button depth="1" name="on9" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-12" width="150" height="28" justify="center" font_size="22" color="90,255,130,255" text_key="ad2RailConsoleBtnOn"/>
+			</rect>
+			<label depth="5" name="status" pos="60,-690" width="1080" height="30" font_size="22" color="90,255,130,170" text="{con_status}"/>
+			<label depth="5" name="message" pos="60,-718" width="1080" height="30" font_size="24" color="255,200,70,255" text="{con_msg}"/>
+			<rect depth="6" pos="1170,-750" width="170" height="50">
+				<button depth="1" name="btnClose" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-13" width="170" height="32" justify="center" font_size="26" color="90,255,130,255" text_key="ad2RailConsoleBtnClose"/>
+			</rect>
+			<sprite depth="9" name="scanlines" pos="24,-24" width="1352" height="792" sprite="ad2RailTermScanlines"/>
+		</window>
+		<window name="windowAD2RailGuide" anchor="CenterCenter" pos="-700,420" width="1400" height="840" controller="AD2RailGuideWindow, AD2Railroads" cursor_area="true">
+			<sprite depth="1" name="bezel" sprite="menu_empty" color="38,38,34,255" type="sliced"/>
+			<sprite depth="2" name="bezelEdge" sprite="menu_empty3px" color="16,16,14,255" type="sliced" fillcenter="false"/>
+			<sprite depth="3" name="screen" pos="24,-24" width="1352" height="792" sprite="ad2RailTermScreen"/>
+			<label depth="5" name="header" pos="60,-46" width="1280" height="36" font_size="30" color="90,255,130,255" text_key="ashenRailsGuideHeader"/>
+			<sprite depth="5" name="headerLine" pos="60,-88" width="1280" height="2" sprite="menu_empty" color="60,190,90,200"/>
+			<label depth="5" name="intro" pos="60,-102" width="1280" height="30" font_size="24" color="90,255,130,170" text_key="ashenRailsGuideIntro"/>
+			<rect depth="6" pos="60,-150" width="340" height="50">
+				<button depth="1" name="topic0" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel0}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic0}"/>
+			</rect>
+			<rect depth="6" pos="60,-214" width="340" height="50">
+				<button depth="1" name="topic1" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel1}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic1}"/>
+			</rect>
+			<rect depth="6" pos="60,-278" width="340" height="50">
+				<button depth="1" name="topic2" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel2}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic2}"/>
+			</rect>
+			<rect depth="6" pos="60,-342" width="340" height="50">
+				<button depth="1" name="topic3" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel3}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic3}"/>
+			</rect>
+			<rect depth="6" pos="60,-406" width="340" height="50">
+				<button depth="1" name="topic4" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel4}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic4}"/>
+			</rect>
+			<rect depth="6" pos="60,-470" width="340" height="50">
+				<button depth="1" name="topic5" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel5}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic5}"/>
+			</rect>
+			<rect depth="6" pos="60,-534" width="340" height="50">
+				<button depth="1" name="topic6" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel6}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic6}"/>
+			</rect>
+			<rect depth="6" pos="60,-598" width="340" height="50">
+				<button depth="1" name="topic7" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty" color="40,140,60,255" type="sliced" visible="{guide_topic_sel7}"/>
+				<sprite depth="3" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="4" pos="0,-10" width="340" height="32" justify="center" font_size="26" color="90,255,130,255" text="{guide_topic7}"/>
+			</rect>
+			<label depth="5" name="guideText" pos="440,-150" width="880" height="580" font_size="24" color="90,255,130,255" text="{guide_text}"/>
+			<rect depth="6" pos="1170,-750" width="170" height="50">
+				<button depth="1" name="btnBack" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="170" height="32" justify="center" font_size="26" color="90,255,130,255" text_key="ad2RailMapBtnBack"/>
+			</rect>
+			<sprite depth="9" name="scanlines" pos="24,-24" width="1352" height="792" sprite="ad2RailTermScanlines"/>
+		</window>
+		<window name="windowAD2RailMap" anchor="CenterCenter" pos="-820,470" width="1640" height="940" controller="AD2RailMapWindow, AD2Railroads" cursor_area="true">
+			<sprite depth="1" name="bezel" sprite="menu_empty" color="38,38,34,255" type="sliced"/>
+			<sprite depth="2" name="bezelEdge" sprite="menu_empty3px" color="16,16,14,255" type="sliced" fillcenter="false"/>
+			<sprite depth="3" name="screen" pos="24,-24" width="1592" height="892" sprite="ad2RailTermScreen"/>
+			<label depth="5" name="header" pos="60,-46" width="700" height="36" font_size="30" color="90,255,130,255" text="{map_header}"/>
+			<label depth="5" name="info" pos="780,-50" width="800" height="32" font_size="26" justify="right" color="255,200,80,255" text="{map_info}"/>
+			<sprite depth="5" name="headerLine" pos="60,-88" width="1520" height="2" sprite="menu_empty" color="60,190,90,200"/>
+			<rect depth="5" name="mapArea" pos="48,-100" width="1544" height="700" on_press="true" on_drag="true" on_scroll="true">
+				<texture depth="2" name="mapTex" pos="0,0" width="1544" height="700"/>
+				<label depth="4" name="st0" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st1" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st2" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st3" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st4" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st5" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st6" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st7" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st8" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st9" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st10" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st11" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st12" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st13" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st14" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st15" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st16" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st17" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st18" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st19" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st20" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st21" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st22" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st23" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st24" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st25" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st26" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st27" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st28" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st29" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st30" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st31" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st32" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st33" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st34" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st35" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st36" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st37" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st38" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+				<label depth="4" name="st39" pos="0,0" width="300" height="24" font_size="20" color="90,255,130,255" text=""/>
+			</rect>
+			<label depth="5" name="hint" pos="60,-818" width="900" height="24" font_size="22" color="90,255,130,255" text="{map_hint}"/>
+			<label depth="5" name="scale" pos="60,-850" width="900" height="24" font_size="22" color="90,255,130,255" text="{map_scale}"/>
+			<rect depth="6" pos="1240,-822" width="170" height="50" visible="{map_back_visible}">
+				<button depth="1" name="btnBack" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="170" height="32" justify="center" font_size="26" color="90,255,130,255" text_key="ad2RailMapBtnBack"/>
+			</rect>
+			<rect depth="6" pos="1240,-822" width="170" height="50" visible="{map_depart_visible}">
+				<button depth="1" name="btnDepart" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="170" height="32" justify="center" font_size="26" color="90,255,130,255" text_key="ad2RailMapBtnDepart"/>
+			</rect>
+			<rect depth="6" pos="1426,-822" width="170" height="50">
+				<button depth="1" name="btnClose" sprite="menu_empty" defaultcolor="16,60,26,255" hovercolor="40,140,60,255" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" sprite="menu_empty2px" color="90,255,130,255" type="sliced" fillcenter="false"/>
+				<label depth="3" pos="0,-10" width="170" height="32" justify="center" font_size="26" color="90,255,130,255" text_key="ad2RailTermBtnClose"/>
+			</rect>
+			<sprite depth="9" name="scanlines" pos="24,-24" width="1592" height="892" sprite="ad2RailTermScanlines"/>
+		</window>
+	</append>
+	<insertBefore xpath="/windows/window[@name='ingameMenu']/grid/ulmMenuButton[@name='btnHelp']">
+		<ulmMenuButton name="btnAshenRailsGuide" text="ashenRailsGuideButton"/>
+	</insertBefore>
+	<set xpath="//grid[@controller='ULM_ResearchGrid,UndeadLegacy']/@rows">100</set>
+</configs>

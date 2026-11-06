@@ -1,0 +1,247 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
+ad2RailTrackStraight,blocks,Block,,,Rail Track Straight,,Gleis gerade
+ad2RailTrackStraightDesc,blocks,Block,,,"A straight 2 m section of rail track. Needs level, solid ground under its whole footprint. Rail vehicles only drive on connected track.",,"Ein gerades, 2 m langes Gleisstück. Braucht ebenen, festen Boden unter der ganzen Grundfläche. Schienenfahrzeuge fahren nur auf verbundenen Gleisen."
+ad2RailTrackShort,blocks,Block,,,Rail Track Short,,Gleis kurz
+ad2RailTrackShortDesc,blocks,Block,,,"A straight 1 m section of rail track for closing odd gaps. Needs level, solid ground under its whole footprint. Rail vehicles only drive on connected track.",,"Ein gerades, 1 m langes Gleisstück zum Schließen ungerader Lücken. Braucht ebenen, festen Boden unter der ganzen Grundfläche. Schienenfahrzeuge fahren nur auf verbundenen Gleisen."
+ad2RailTrackCurve,blocks,Block,,,Rail Curve 90°,,Gleiskurve 90°
+ad2RailTrackCurveDesc,blocks,Block,,,"A 90 degree curve with a 6 m radius. Needs level, solid ground under the rails. Connects to straight track at both ends.",,"Eine 90-Grad-Kurve mit 6 m Radius. Braucht ebenen, festen Boden unter den Schienen. Schließt an beiden Enden an gerade Gleise an."
+ad2RailTrackRamp,blocks,Block,,,Rail Track Ramp 6 m,,Gleisrampe 6 m
+ad2RailTrackRampPlaced,blocks,Block,,,Rail Track Ramp 6 m,,Gleisrampe 6 m
+ad2RailTrackRampDesc,blocks,Block,,,"A 6 m track ramp that rises one block. Place it on level, solid ground: it lays a concrete ramp underneath. Continue at the top on track placed on blocks.",,"Eine 6 m lange Gleisrampe, die einen Block ansteigt. Auf ebenen, festen Boden setzen: Sie legt darunter eine Betonrampe an. Oben auf Blöcken mit Gleisen weiterbauen."
+ad2RailTrackRamp8,blocks,Block,,,Rail Track Ramp 8 m,,Gleisrampe 8 m
+ad2RailTrackRamp8Placed,blocks,Block,,,Rail Track Ramp 8 m,,Gleisrampe 8 m
+ad2RailTrackRamp8Desc,blocks,Block,,,"An 8 m track ramp that rises one block, flatter than the 6 m ramp. Place it on level, solid ground: it lays a concrete ramp underneath. Continue at the top on track placed on blocks.",,"Eine 8 m lange Gleisrampe, die einen Block ansteigt, flacher als die 6-m-Rampe. Auf ebenen, festen Boden setzen: Sie legt darunter eine Betonrampe an. Oben auf Blöcken mit Gleisen weiterbauen."
+ad2RailTrackRampFree,blocks,Block,,,Rail Track Ramp 6 m without Subgrade,,Gleisrampe 6 m ohne Unterbau
+ad2RailTrackRampFreeDesc,blocks,Block,,,"A 6 m track ramp without a concrete subgrade. First build a 6 m ramp from vanilla ramp shapes of any material (pieces 1 to 6, rising the way the ramp should go), then place this on top of it.",,"Eine 6 m lange Gleisrampe ohne Betonunterbau. Zuerst eine 6-m-Rampe aus Vanilla-Rampenformen in beliebigem Material bauen (Teile 1 bis 6, ansteigend in Fahrtrichtung der Rampe), dann diese darauf setzen."
+ad2RailTrackRamp8Free,blocks,Block,,,Rail Track Ramp 8 m without Subgrade,,Gleisrampe 8 m ohne Unterbau
+ad2RailTrackRamp8FreeDesc,blocks,Block,,,"An 8 m track ramp without a concrete subgrade. First build an 8 m ramp from vanilla ramp shapes of any material (pieces 1 to 8, rising the way the ramp should go), then place this on top of it.",,"Eine 8 m lange Gleisrampe ohne Betonunterbau. Zuerst eine 8-m-Rampe aus Vanilla-Rampenformen in beliebigem Material bauen (Teile 1 bis 8, ansteigend in Fahrtrichtung der Rampe), dann diese darauf setzen."
+ad2RailRampVariantHelper,blocks,Block,,,Rail Track Ramp,,Gleisrampe
+ad2RailRampVariantHelperDesc,blocks,Block,,,"Rail track ramp that rises one block. Choose the shape when placing: 6 m or 8 m, with or without subgrade. With subgrade: place it on level, solid ground, it lays a concrete ramp underneath. Without subgrade: place it on a ramp you built from vanilla ramp shapes. Continue at the top on track placed on blocks.",,"Gleisrampe, die einen Block ansteigt. Die Form wird beim Platzieren gewählt: 6 m oder 8 m, mit oder ohne Unterbau. Mit Unterbau: auf ebenen, festen Boden setzen, sie legt darunter eine Betonrampe an. Ohne Unterbau: auf eine selbst gebaute Rampe aus Vanilla-Rampenformen setzen. Oben auf Blöcken mit Gleisen weiterbauen."
+ad2RailLoco,vehicles,Vehicle,,,Shunting Locomotive,,Rangierlok
+ad2RailLocoPlaceable,items,Item,,,Shunting Locomotive,,Rangierlok
+ad2RailLocoPlaceableDesc,items,Item,,,A small diesel shunting locomotive that runs on rail tracks. Place it on a track to drive. Needs gas.,,"Eine kleine Diesel-Rangierlok, die auf Gleisen fährt. Zum Fahren auf ein Gleis stellen. Braucht Benzin."
+ad2RailModLoreWagon,item_modifiers,Mod,,,Mine Cart Trailer (old),,Loren-Anhänger (alt)
+ad2RailModLoreWagonDesc,item_modifiers,Mod,,,Old locomotive mod. Installed copies become a Mine Cart in the train automatically. This item can be coupled as a Mine Cart at the train console.,,Alte Lok-Mod. Eingebaute Exemplare werden automatisch zur Lore im Wagenzug. Dieses Item lässt sich an der Zugkonsole als Lore anhängen.
+ad2RailModCruise,item_modifiers,Mod,,,Cruise Control,,Tempomat
+ad2RailModCruiseDesc,item_modifiers,Mod,,,Cruise control for the shunting locomotive. Press the hop key (default C) to hold the current speed. Braking ends it.,,Tempomat für die Rangierlok. Mit der Hüpfen-Taste (Standard C) wird das aktuelle Tempo gehalten. Bremsen beendet ihn.
+ad2RailCruiseOn,UI,Tooltip,,,Cruise control on ({0} to turn off),,Tempomat an ({0} zum Ausschalten)
+ad2RailCruiseOff,UI,Tooltip,,,Cruise control off,,Tempomat aus
+ad2RailCruiseHint,UI,Tooltip,,,Cruise control: press {0} to hold the current speed,,Tempomat: {0} drücken um das aktuelle Tempo zu halten
+ad2RailTrackSwitchRight,blocks,Block,,,Rail Switch 90° Right,,Weiche 90° rechts
+ad2RailTrackSwitchLeft,blocks,Block,,,Rail Switch 90° Left,,Weiche 90° links
+ad2RailTrackSwitchDesc,blocks,Block,,,A rail switch with a straight branch and a 6 m radius curve. Use it to set the branch. Trains coming from either branch always pass.,,"Eine Weiche mit geradem Strang und einer Kurve mit 6 m Radius. Benutzen stellt die Weiche um. Züge, die von einem der beiden Stränge kommen, fahren immer durch."
+blockcommand_ad2railswitch,UI,Text,,,Set switch,,Weiche stellen
+ad2RailBarrier,blocks,Block,,,Rail Barrier,,Bahnschranke
+ad2RailBarrierDesc,blocks,Block,,,"A barrier for the side of the track. Use it to close or open it. From a train, the barrier key (default: left mouse button) switches all barriers within 25 m. Trains stop in front of a closed barrier.",,Eine Schranke für den Gleisrand. Benutzen schließt oder öffnet sie. Vom Zug aus schaltet die Schranken-Taste (Standard: linke Maustaste) alle Schranken im Umkreis von 25 m. Züge halten vor einer geschlossenen Schranke.
+ad2RailBufferStop,blocks,Block,,,Buffer Stop,,Prellbock
+ad2RailBufferStopDesc,blocks,Block,,,Stands at the end of a track.,,Steht am Ende eines Gleises.
+ad2RailBarrierPromptClose,UI,Text,,,{0} Close barrier,,{0} Schranke schließen
+ad2RailBarrierPromptOpen,UI,Text,,,{0} Open barrier,,{0} Schranke öffnen
+ad2RailSwitchPrompt,UI,Text,,,{0} Set switch (currently: {1}),,{0} Weiche stellen (aktuell: {1})
+ad2RailSwitchStraight,UI,Text,,,straight,,gerade
+ad2RailSwitchDiverge,UI,Text,,,diverging,,abzweigend
+ad2RailWreckLoco,blocks,Block,,,Rusted Locomotive,,Verrostete Lok
+ad2RailWreckLocoDesc,blocks,Block,,,Repair with a Locomotive Engine Kit,,Reparieren mit Lok-Motorset
+ad2RailWreckLocoNoAxle,blocks,Block,,,Rusted Locomotive (Missing Axle),,Verrostete Lok (ohne Radsatz)
+ad2RailWreckLocoNoAxleDesc,blocks,Block,,,Repair with a Locomotive Running Gear Kit,,Reparieren mit Lok-Fahrwerksset
+ad2RailWreckLocoDerailed,blocks,Block,,,Derailed Locomotive,,Entgleiste Lok
+ad2RailWreckLocoDerailedDesc,blocks,Block,,,A rusted out shunting locomotive lying on its side.,,"Eine verrostete Rangierlok, die auf der Seite liegt."
+ad2RailWreckLocoRepaired,blocks,Block,,,Repaired Locomotive,,Reparierte Lok
+ad2RailWreckLocoRepairedDesc,blocks,Block,,,A repaired shunting locomotive. Pick it up to get a working locomotive.,,"Eine reparierte Rangierlok. Aufheben, um eine fahrbereite Lok zu erhalten."
+ad2RailRepairKitRunningGear,items,Item,,,Locomotive Running Gear Kit,,Lok-Fahrwerksset
+ad2RailRepairKitRunningGearDesc,items,Item,,,Parts to replace a missing wheel set on a locomotive wreck. Use a claw hammer or nail gun on the wreck.,,"Teile, um einen fehlenden Radsatz an einem Lok-Wrack zu ersetzen. Mit Klauenhammer oder Nagelpistole am Wrack verwenden."
+ad2RailRepairKitEngine,items,Item,,,Locomotive Engine Kit,,Lok-Motorset
+ad2RailRepairKitEngineDesc,items,Item,,,Parts to get the engine of a rusted locomotive running again. Use a claw hammer or nail gun on the wreck.,,"Teile, um den Motor einer verrosteten Lok wieder zum Laufen zu bringen. Mit Klauenhammer oder Nagelpistole am Wrack verwenden."
+ad2RailTrackVariantHelper,blocks,Block,,,Rail Track,,Gleis
+ad2RailTrackVariantHelperDesc,blocks,Block,,,"Rail track. Choose the shape when placing: straight 2 m or 1 m, diagonal long or short, 90° curve, 45° curve or crossing. Needs level, solid ground under the rails. Remove it by destroying it.",,"Gleis. Die Form wird beim Platzieren gewählt: gerade 2 m oder 1 m, schräg lang oder kurz, 90°-Kurve, 45°-Kurve oder Kreuzung. Braucht ebenen, festen Boden unter den Schienen. Entfernen durch Zerstören."
+ad2RailSwitchVariantHelper,blocks,Block,,,Rail Switch,,Weiche
+ad2RailSwitchVariantHelperDesc,blocks,Block,,,"Rail switch. Choose the shape when placing: 90° or 45° branch, right or left, or a 45° three-way switch. Use it to set the branch. Remove it by destroying it.",,"Weiche. Die Form wird beim Platzieren gewählt: 90°- oder 45°-Abzweig, rechts oder links, oder eine 45°-Dreiwegweiche. Benutzen stellt die Weiche um. Entfernen durch Zerstören."
+ad2RailTrackDiagonal,blocks,Block,,,Rail Track Diagonal,,Gleis schräg
+ad2RailTrackDiagonalDesc,blocks,Block,,,"A diagonal 4.2 m section of rail track. Connects to 45° curves and switches. Needs level, solid ground under the rails.",,"Ein schräges, 4,2 m langes Gleisstück. Schließt an 45°-Kurven und -Weichen an. Braucht ebenen, festen Boden unter den Schienen."
+ad2RailTrackDiagonalShort,blocks,Block,,,Rail Track Diagonal Short,,Gleis schräg kurz
+ad2RailTrackDiagonalShortDesc,blocks,Block,,,"A diagonal 1.4 m section of rail track, one block step. Connects to diagonal track, 45° curves and switches. Needs level, solid ground under the rails.",,"Ein schräges, 1,4 m langes Gleisstück, ein Block Versatz. Schließt an schräge Gleise, 45°-Kurven und -Weichen an. Braucht ebenen, festen Boden unter den Schienen."
+ad2RailTrackCurve45Right,blocks,Block,,,Rail Curve 45° Right,,Gleiskurve 45° rechts
+ad2RailTrackCurve45Left,blocks,Block,,,Rail Curve 45° Left,,Gleiskurve 45° links
+ad2RailTrackCurve45Desc,blocks,Block,,,"A 45° curve between straight and diagonal track. Needs level, solid ground under the rails.",,"Eine 45°-Kurve zwischen geradem und schrägem Gleis. Braucht ebenen, festen Boden unter den Schienen."
+ad2RailTrackSwitch45Right,blocks,Block,,,Rail Switch 45° Right,,Weiche 45° rechts
+ad2RailTrackSwitch45Left,blocks,Block,,,Rail Switch 45° Left,,Weiche 45° links
+ad2RailTrackSwitch45Desc,blocks,Block,,,A rail switch with a straight branch and a 45° branch to diagonal track. Use it to set the branch. Trains coming from either branch always pass.,,"Eine Weiche mit geradem Strang und einem 45°-Abzweig auf schräges Gleis. Benutzen stellt die Weiche um. Züge, die von einem der beiden Stränge kommen, fahren immer durch."
+ad2RailWreckRandomHelper,blocks,Block,,,Locomotive Wreck (Random),,Lok-Wrack (zufällig)
+ad2RailTrackCrossing,blocks,Block,,,Rail Crossing 90°,,Gleiskreuzung 90°
+ad2RailTrackCrossingDesc,blocks,Block,,,"Two rail tracks crossing at a right angle. Both tracks are always open. Needs level, solid ground under the rails.",,"Zwei Gleise, die sich im rechten Winkel kreuzen. Beide Gleise sind immer befahrbar. Braucht ebenen, festen Boden unter den Schienen."
+ad2RailTrackSwitch3Way45,blocks,Block,,,Rail Switch 45° Three-Way,,Dreiwegweiche 45°
+ad2RailTrackSwitch3Way45Desc,blocks,Block,,,"A rail switch with a straight branch and a 45° branch to each side. Use it to set the branch: straight, right, left. Trains coming from any branch always pass.",,"Eine Weiche mit geradem Strang und je einem 45°-Abzweig nach rechts und links. Benutzen stellt die Weiche um: gerade, rechts, links. Züge, die von einem der Stränge kommen, fahren immer durch."
+ad2RailSwitchRightState,UI,Text,,,right,,rechts
+ad2RailSwitchLeftState,UI,Text,,,left,,links
+ad2RailHudSpeed,UI,Text,,,Speed,,Tempo
+ad2RailHudFuel,UI,Text,,,Fuel,,Tank
+ad2RailHudHealth,UI,Text,,,Condition,,Zustand
+ad2RailHudCruise,UI,Text,,,Cruise,,Tempomat
+ad2RailHudLight,UI,Text,,,Lights,,Licht
+ad2RailHudSwitch,UI,Text,,,Switch,,Weiche
+ad2RailHudBarrier,UI,Text,,,Barriers,,Schranken
+ad2RailHudNone,UI,Text,,,-,,-
+ad2RailHudOn,UI,Text,,,on,,an
+ad2RailHudOff,UI,Text,,,off,,aus
+ad2RailHudCruiseOn,UI,Text,,,on ({0} km/h),,an ({0} km/h)
+ad2RailHudSwitchAhead,UI,Text,,,{0} m: {1},,{0} m: {1}
+ad2RailHudBarriers,UI,Text,,,{0}: {1},,{0}: {1}
+ad2RailHudOpen,UI,Text,,,open,,offen
+ad2RailHudClosed,UI,Text,,,closed,,zu
+ad2RailHudKeysSwitch,UI,Text,,,{0} / {1}: set switch ahead,,{0} / {1}: Weiche voraus stellen
+ad2RailHudKeysBarrier,UI,Text,,,{0}: barriers,,{0}: Schranken
+ad2RailLayerPlaced,UI,Text,,,{0} track pieces laid,,{0} Gleisstücke verlegt
+ad2RailLayerBlocked,UI,Text,,,"Cannot lay track at {0}: needs level, solid ground and free space.",,"Kein Gleis möglich bei {0}: braucht ebenen, festen Boden und freien Platz."
+ad2RailLayerClaim,UI,Text,,,Building not allowed at {0}.,,Bauen bei {0} nicht erlaubt.
+ad2RailLayerFar,UI,Text,,,Too far away.,,Zu weit entfernt.
+ad2RailLayerFail,UI,Text,,,Laying track failed.,,Verlegen fehlgeschlagen.
+ad2RailLayerOccupied,UI,Text,,,Space occupied at {0}.,,Platz belegt bei {0}.
+ad2RailLayerGround,UI,Text,,,"No level, solid ground under the rails at {0}.",,"Kein ebener, fester Boden unter den Schienen bei {0}."
+ad2RailLayerEntity,UI,Text,,,Something is in the way at {0}.,,Etwas steht im Weg bei {0}.
+ad2RailLayerTrader,UI,Text,,,Trader protection at {0}.,,Händlerschutz bei {0}.
+ad2RailSnapHud,UI,Text,,,{0} (Q) | Variant {1}/{2} (R),,{0} (Q) | Variante {1}/{2} (R)
+ad2RailSnapHudSwitch,UI,Text,,,{0} (Q) | Rotation {1}/{2} (R),,{0} (Q) | Drehung {1}/{2} (R)
+ad2RailSnapHudCount,UI,Text,,,Pieces {0} (mouse wheel),,Anzahl {0} (Mausrad)
+ad2RailSnapNoEnd,UI,Text,,,No free track end nearby.,,Kein freies Gleisende in der Nähe.
+ad2RailSnapNoFit,UI,Text,,,This piece does not fit this track end.,,Dieses Stück passt nicht an dieses Gleisende.
+ad2RailSnapItems,UI,Text,,,"Not enough {2}: {0} needed, {1} available.",,"Nicht genug {2}: {0} benötigt, {1} vorhanden."
+ad2RailRwgPlanning,UI,Text,x,,Ashen Rails (beta): planning rail lines,,Ashen Rails (Beta): Bahnlinien planen
+ad2RailRwgLine,UI,Text,x,,Ashen Rails (beta): rail line {0} of {1},,Ashen Rails (Beta): Bahnlinie {0} von {1}
+ad2RailRwgRetry,UI,Text,x,,Ashen Rails (beta): second try for failed rail line {0} of {1},,Ashen Rails (Beta): zweiter Versuch für fehlgeschlagene Bahnlinie {0} von {1}
+ad2RailRwgBetaWarning,UI,Text,x,,"Ashen Rails rail lines are a beta: they can make world generation take much longer, and the result may contain errors.",,"Die Bahnlinien von Ashen Rails sind eine Beta: Sie können die Generierung deutlich verlängern, und das Ergebnis ist nicht fehlerfrei."
+ad2RailRwgFile,UI,Text,x,,Rail lines,,Bahnlinien
+ad2RailRwgOptTracks,UI,Text,x,,Rails,,Gleise
+ad2RailRwgOptTracksDesc,UI,Text,x,,Ashen Rails: rail lines beside the highways between the towns.,,Ashen Rails: Bahnlinien entlang der Highways zwischen den Städten.
+ad2RailRwgOptStations,UI,Text,x,,Stations,,Bahnhöfe
+ad2RailRwgOptStationsDesc,UI,Text,x,,"One station on every town side with lines, linked around the town, or one station per town.",,"Ein Bahnhof je Stadtseite mit Linien, um die Stadt herum verbunden, oder ein Bahnhof pro Stadt."
+ad2RailRwgOptStops,UI,Text,x,,Stops,,Halte
+ad2RailRwgOptStopsDesc,UI,Text,x,,Intermediate stations on long lines. Normal: about every 1.5 km. Rare: about every 2.5 km.,,"Zwischenbahnhöfe auf langen Strecken. Normal: etwa alle 1,5 km. Selten: etwa alle 2,5 km."
+ad2RailRwgOptTrader,UI,Text,x,,Trader,,Händler
+ad2RailRwgOptTraderDesc,UI,Text,x,,The town's station is placed next to its trader.,,Der Bahnhof einer Stadt wird beim Händler platziert.
+ad2RailRwgOptWrecks,UI,Text,x,,Wrecks,,Wracks
+ad2RailRwgOptWrecksDesc,UI,Text,x,,"Loco wrecks beside the track, mostly derailed, rarely repairable. Normal: about every 2 km. Rare: about every 5 km.",,"Lokwracks neben den Gleisen, meist entgleist, selten reparierbar. Normal: etwa alle 2 km. Selten: etwa alle 5 km."
+ad2RailRwgOnOffOn,UI,Text,x,,On,,An
+ad2RailRwgOnOffOff,UI,Text,x,,Off,,Aus
+ad2RailRwgStationsSide,UI,Text,x,,Per town side,,Pro Stadtseite
+ad2RailRwgStationsTown,UI,Text,x,,One per town,,Einer pro Stadt
+ad2RailRwgAmountNormal,UI,Text,x,,Normal,,Normal
+ad2RailRwgAmountRare,UI,Text,x,,Rare,,Selten
+ad2RailRwgAmountOff,UI,Text,x,,Off,,Aus
+ad2RailTerminal,blocks,Block,,,Station Terminal,,Bahnhofsterminal
+ad2RailTerminalDesc,blocks,Block,,,"A terminal for rail stations. Place it within 8 m of a track. Register the station with a name, or add a station registered by another player to your list. Names cannot be changed.",,Ein Terminal für Bahnhöfe. Höchstens 8 m neben ein Gleis stellen. Den Bahnhof mit einem Namen registrieren oder einen von einem anderen Spieler registrierten Bahnhof in die eigene Liste aufnehmen. Namen lassen sich nicht ändern.
+ad2RailTerminalPrompt,UI,Text,,,{0} Use terminal,,{0} Terminal benutzen
+ad2RailTermHeader,UI,Text,,,ASHEN RAILS // STATION TERMINAL,,ASHEN RAILS // BAHNHOFSTERMINAL
+ad2RailTermLoading,UI,Text,,,CONNECTING...,,VERBINDE...
+ad2RailTermNoTrack,UI,Text,,,NO TRACK IN RANGE.\nTHE TERMINAL MUST STAND WITHIN {0} M OF A TRACK.,,KEIN GLEIS IN REICHWEITE.\nDAS TERMINAL MUSS HÖCHSTENS {0} M NEBEN EINEM GLEIS STEHEN.
+ad2RailTermUnregistered,UI,Text,,,STATION NOT REGISTERED.\n\nENTER A NAME FOR THIS STATION ({0} TO {1} CHARACTERS):,,BAHNHOF NICHT REGISTRIERT.\n\nNAMEN FÜR DIESEN BAHNHOF EINGEBEN ({0} BIS {1} ZEICHEN):
+ad2RailTermConfirm,UI,Text,,,REGISTER STATION AS:\n\n   {0}\n\nTHE NAME CANNOT BE CHANGED LATER.\nCONFIRM?,,BAHNHOF REGISTRIEREN ALS:\n\n   {0}\n\nDER NAME KANN SPÄTER NICHT GEÄNDERT WERDEN.\nBESTÄTIGEN?
+ad2RailTermUnknown,UI,Text,,,STATION: {0}\nREGISTERED BY: {1}\n\nTHIS STATION IS NOT IN YOUR LIST YET.,,BAHNHOF: {0}\nREGISTRIERT VON: {1}\n\nDIESER BAHNHOF IST NOCH NICHT IN DEINER LISTE.
+ad2RailTermKnown,UI,Text,,,STATION: {0}\n\nYOUR STATIONS ({1}):,,BAHNHOF: {0}\n\nDEINE BAHNHÖFE ({1}):
+ad2RailTermMore,UI,Text,,,... AND {0} MORE,,... UND {0} WEITERE
+ad2RailTermOutOfService,UI,Text,,,(OUT OF SERVICE),,(AUSSER BETRIEB)
+ad2RailTermBtnRegister,UI,Text,,,REGISTER,,REGISTRIEREN
+ad2RailTermBtnYes,UI,Text,,,YES,,JA
+ad2RailTermBtnNo,UI,Text,,,NO,,NEIN
+ad2RailTermBtnDiscover,UI,Text,,,ADD TO LIST,,IN LISTE AUFNEHMEN
+ad2RailTermBtnClose,UI,Text,,,CLOSE,,SCHLIESSEN
+ad2RailTermMsgRegistered,UI,Text,,,STATION REGISTERED.,,BAHNHOF REGISTRIERT.
+ad2RailTermMsgDiscovered,UI,Text,,,STATION ADDED TO YOUR LIST.,,BAHNHOF IN DEINE LISTE AUFGENOMMEN.
+ad2RailTermMsgAlready,UI,Text,,,THIS STATION IS ALREADY REGISTERED.,,DIESER BAHNHOF IST BEREITS REGISTRIERT.
+ad2RailTermMsgNoTrack,UI,Text,,,NO TRACK IN RANGE.,,KEIN GLEIS IN REICHWEITE.
+ad2RailTermMsgNameLength,UI,Text,,,THE NAME MUST BE 3 TO 24 CHARACTERS LONG.,,DER NAME MUSS 3 BIS 24 ZEICHEN LANG SEIN.
+ad2RailTermMsgNameTaken,UI,Text,,,THIS NAME IS ALREADY TAKEN.,,DIESER NAME IST BEREITS VERGEBEN.
+ad2RailTermMsgFailed,UI,Text,,,REQUEST FAILED.,,ANFRAGE FEHLGESCHLAGEN.
+ad2RailTermBtnMap,UI,Text,,,NETWORK MAP,,NETZPLAN
+ad2RailMapHeader,UI,Text,,,ASHEN RAILS // NETWORK MAP,,ASHEN RAILS // NETZPLAN
+ad2RailMapHint,UI,Text,,,MOUSE WHEEL: ZOOM   DRAG: MOVE,,MAUSRAD: ZOOM   ZIEHEN: VERSCHIEBEN
+ad2RailMapLoading,UI,Text,,,LOADING NETWORK DATA...,,LADE NETZDATEN...
+ad2RailMapScale,UI,Text,,,100 PIXELS = {0},,100 PIXEL = {0}
+ad2RailMapBtnBack,UI,Text,,,BACK,,ZURÜCK
+ad2RailModTimetable,item_modifiers,Mod,,,Timetable,,Fahrplan
+ad2RailModTimetableDesc,item_modifiers,Mod,,,Locomotive mod. Press the map key in the locomotive to open the timetable: the network map with your known stations. Click a station to plan the route there.,,"Lok-Mod. In der Lok mit der Kartentaste den Fahrplan öffnen: den Netzplan mit deinen bekannten Bahnhöfen. Einen Bahnhof anklicken, um die Route dorthin zu planen."
+ad2RailMapHeaderTimetable,UI,Text,,,ASHEN RAILS // TIMETABLE,,ASHEN RAILS // FAHRPLAN
+ad2RailMapHintTimetable,UI,Text,,,CLICK A STATION: DESTINATION   MOUSE WHEEL: ZOOM   DRAG: MOVE,,BAHNHOF ANKLICKEN: ZIEL   MAUSRAD: ZOOM   ZIEHEN: VERSCHIEBEN
+ad2RailMapPickStation,UI,Text,,,PICK A DESTINATION,,ZIEL WÄHLEN
+ad2RailMapRoutePending,UI,Text,,,ROUTE TO {0}...,,ROUTE NACH {0}...
+ad2RailMapRoute,UI,Text,,,DESTINATION {0}  |  {1},,ZIEL {0}  |  {1}
+ad2RailMapBtnDepart,UI,Text,,,DEPART,,ABFAHRT
+ad2RailRouteNone,UI,Text,,,NO CONNECTION TO {0},,KEINE VERBINDUNG NACH {0}
+ad2RailRouteNoStart,UI,Text,,,THE VEHICLE IS NOT ON THE TRACK,,DAS FAHRZEUG STEHT NICHT AUF DEM GLEIS
+ad2RailRouteNoTrack,UI,Text,,,NO TRACK AT {0},,KEIN GLEIS AM BAHNHOF {0}
+ad2RailRouteOutOfService,UI,Text,,,{0} IS OUT OF SERVICE,,{0} IST AUSSER BETRIEB
+ad2RailRouteUnknown,UI,Text,,,{0} IS NOT IN YOUR LIST,,{0} IST NICHT IN DEINER LISTE
+ad2RailMapRouteReversals,UI,Text,,,  |  REVERSALS: {0},,  |  RICHTUNGSWECHSEL: {0}
+ad2RailAutoStarted,UI,Text,,,"Autopilot: driving to {0}, fare {1} paid. You can get off at the destination.",,"Autopilot: Fahrt nach {0}, Fahrpreis {1} bezahlt. Aussteigen erst am Ziel."
+ad2RailAutoArrived,UI,Text,,,Arrived at {0},,Angekommen in {0}
+ad2RailAutoNoFuel,UI,Text,,,Autopilot stopped: no fuel,,Autopilot gestoppt: kein Benzin
+ad2RailAutoLeft,UI,Text,,,Autopilot stopped: the train left the route,,Autopilot gestoppt: Der Zug hat die Route verlassen
+ad2RailAutoNotDriver,UI,Text,,,ONLY THE DRIVER CAN DEPART,,NUR DER FAHRER KANN ABFAHREN
+ad2RailAutoMoved,UI,Text,,,"THE VEHICLE HAS MOVED, PICK THE DESTINATION AGAIN",,"DAS FAHRZEUG HAT SICH BEWEGT, ZIEL NEU WÄHLEN"
+ad2RailAutoStandStill,UI,Text,,,STOP THE VEHICLE FIRST,,ERST ANHALTEN
+ad2RailHudAutopilot,UI,Text,,,"Autopilot: {0}, {1}",,"Autopilot: {0}, {1}"
+ad2RailMapFare,UI,Text,,,  |  FARE: {0},,  |  FAHRPREIS: {0}
+ad2RailAutoNoMoney,UI,Text,,,NOT ENOUGH MONEY ({0} NEEDED),,NICHT GENUG GELD ({0} BENÖTIGT)
+ad2RailAutoBlocked,UI,Text,,,Autopilot stopped: the track is blocked,,Autopilot gestoppt: Die Strecke ist blockiert
+ad2RailExitLocked,UI,Text,,,You can get off at the destination,,Aussteigen erst am Ziel
+ashenRailsGuideHeader,UI,Text,,,ASHEN RAILS // MANUAL,,ASHEN RAILS // HANDBUCH
+ashenRailsGuideButton,UI,Text,,,Ashen Rails,,Ashen Rails
+ashenRailsGuideIntro,UI,Text,,,With Ashen Rails you build your own railroad.,,Mit Ashen Rails baust du eine eigene Bahnstrecke.
+ashenRailsGuide1Title,UI,Text,,,Track Building,,Gleisbau
+ashenRailsGuide1,UI,Text,,,"- Rail Track and Rail Switch: pick the variant while building, like with shape blocks, e.g. straight, diagonal, curve, crossing or three-way switch.\n- Hold Alt while building with Rail Track, Rail Switch or Rail Track Ramp: the piece snaps to the nearest free track end. Q changes the shape, R the direction, the mouse wheel the number of straight pieces.\n- With chunk reset switched on, chunks with self-built track and one chunk around them are kept. The console command ashenrails chunkprotect off lets them reset like any other chunk, on switches it back on.",,"- Gleis und Weiche: Beim Bauen wählst du die Variante wie bei Formblöcken, z. B. gerade, diagonal, Kurve, Kreuzung oder Dreiwegweiche.\n- Halte beim Bauen mit Gleis, Weiche oder Gleisrampe ALT gedrückt: Das Stück rastet am nächsten freien Gleisende ein. Q wechselt die Form, R die Richtung, das Mausrad die Anzahl gerader Stücke.\n- Ist der Chunk-Reset eingeschaltet, bleiben Chunks mit selbst gebauten Gleisen und ein Chunk rundherum erhalten. Mit dem Konsolenbefehl ashenrails chunkprotect off werden sie wie alle anderen Chunks zurückgesetzt, mit on wieder geschützt."
+ashenRailsGuide2Title,UI,Text,,,Ramps,,Rampen
+ashenRailsGuide2,UI,Text,,,"- A Rail Track Ramp (6 m or 8 m) takes you one level up. With subgrade it lays a concrete ramp underneath, without subgrade it goes on a ramp you build yourself from ramp shapes. At its upper end, place blocks and keep building on top.",,"- Mit der Gleisrampe (6 m oder 8 m) kommst du eine Ebene höher. Mit Unterbau legt sie darunter eine Betonrampe an, ohne Unterbau kommt sie auf eine selbst gebaute Rampe aus Rampenformen. Am oberen Ende setzt du Blöcke und baust darauf weiter."
+ashenRailsGuide3Title,UI,Text,,,Locomotive,,Lok
+ashenRailsGuide3,UI,Text,,,"- The Shunting Locomotive runs on gas and follows the track by itself. It brakes on its own at the end of the track, in front of other trains and vehicles and at closed barriers.\n- While you drive, the rail display replaces the toolbelt: speed, fuel, condition, the next switch, nearby barriers, cruise control, lights and whether the workshop wagons can be set up here. A and D set the next switch ahead, the left mouse button switches nearby barriers. The display shows your own key bindings.\n- Locomotive mods: Cruise Control, Timetable, plus vanilla vehicle mods like the plow and the light bar.",,"- Die Rangierlok fährt mit Benzin und folgt dem Gleis von selbst. Sie bremst automatisch am Gleisende, vor anderen Zügen und Fahrzeugen und an geschlossenen Schranken.\n- Beim Fahren ersetzt die Zuganzeige den Toolbelt: Tempo, Tank, Zustand, die nächste Weiche, Schranken in der Nähe, Tempomat, Licht und ob die Werkstattwagen hier aufbauen können. Mit A und D stellst du die nächste Weiche voraus, mit der linken Maustaste schaltest du Schranken in der Nähe. Die Anzeige zeigt deine eigene Tastenbelegung.\n- Lok-Mods: Tempomat, Fahrplan, dazu Vanilla-Fahrzeugmods wie Pflug und Lichtleiste."
+ashenRailsGuide4Title,UI,Text,,,Wagons,,Wagen
+ashenRailsGuide4,UI,Text,,,"- Train console: E on the standing locomotive while nobody is at the controls. Couple wagons from your inventory, uncouple them or change their order. Opening the console packs up the workshop wagons.\n- Mine Cart: adds 15 rows to the train storage. One per train.\n- Workshop Wagon: an area of 2 x 4 blocks, 3 blocks high, to build on freely: workstations, crates, generators with lights, farm plots. Up to 10 per train.\n- Stop on straight, level track and get off: the workshop wagons are set up, and you build on them and use everything as usual. When you drive off, everything on them is packed, travels along and is set up again at the next stop. Contents, fuel, crafting queues and wires between blocks on the same wagon stay; wires to blocks off the wagon are cut.\n- The train does not start while someone uses something on a workshop wagon or a block reaches over its edge. Beds, bedrolls and land claims cannot travel. Plants may grow out of the top, but do not grow while packed.",,"- Zugkonsole: E auf die stehende Lok, solange niemand am Steuer sitzt. Wagen aus dem Inventar anhängen, abhängen oder umsortieren. Beim Öffnen der Konsole packen die Werkstattwagen ein.\n- Lore: erweitert das Zuglager um 15 Reihen. Eine pro Zug.\n- Werkstattwagen: eine Baufläche von 2 x 4 Blöcken, 3 Blöcke hoch, frei bebaubar: Werkstationen, Kisten, Generatoren mit Lampen, Farm Plots. Bis zu 10 pro Zug.\n- Halte auf geradem, ebenem Gleis und steig aus: Die Werkstattwagen bauen auf, du baust darauf und benutzt alles wie gewohnt. Beim Losfahren wird alles eingepackt, fährt mit und steht beim nächsten Halt wieder da. Inhalte, Treibstoff, Warteschlangen und Kabel zwischen Blöcken auf demselben Wagen bleiben erhalten, Kabel zu Blöcken neben dem Wagen werden getrennt.\n- Der Zug fährt nicht los, solange jemand etwas auf einem Werkstattwagen benutzt oder ein Block über den Rand ragt. Betten, Schlafsäcke und Landclaims fahren nicht mit. Pflanzen dürfen oben herausragen, wachsen während der Fahrt aber nicht weiter."
+ashenRailsGuide5Title,UI,Text,,,Stations,,Bahnhöfe
+ashenRailsGuide5,UI,Text,,,"- New random worlds can get rail lines with stations at the towns (option in the world generator).\n- Station Terminal: register a station with a name, or add a station registered by another player to your list. NETWORK MAP shows all roads, tracks and your known stations.",,"- Neue Zufallswelten können Bahnlinien mit Bahnhöfen an den Städten bekommen (Option im Weltgenerator).\n- Bahnhofsterminal: Registriere einen Bahnhof mit einem Namen oder nimm einen von einem anderen Spieler registrierten Bahnhof in deine Liste auf. NETZPLAN zeigt alle Straßen, Gleise und deine bekannten Bahnhöfe."
+ashenRailsGuide6Title,UI,Text,,,Timetable,,Fahrplan
+ashenRailsGuide6,UI,Text,,,"- Timetable: press the map key in the locomotive, click one of your stations and see the route and the fare. DEPART starts the autopilot: the train drives there on its own, and nobody can get off before it arrives.",,"- Fahrplan: Drücke in der Lok die Kartentaste, klicke einen deiner Bahnhöfe an und sieh Route und Fahrpreis. ABFAHRT startet den Autopiloten: Der Zug fährt selbst hin, und bis zur Ankunft kann niemand aussteigen."
+ashenRailsGuide7Title,UI,Text,,,Wrecks,,Lokwracks
+ashenRailsGuide7,UI,Text,,,"- Locomotive wrecks can be made drivable again with a Locomotive Running Gear Kit, a Locomotive Engine Kit and a claw hammer. Derailed wrecks cannot be repaired.",,"- Lokwracks machst du mit Lok-Fahrwerksset, Lok-Motorset und einem Klauenhammer wieder fahrbereit. Entgleiste Wracks lassen sich nicht reparieren."
+ad2RailTermBtnHelp,UI,Text,,,HELP,,HILFE
+ashenRailsTipSnap,UI,Loading Screen,x,,"Hold Alt while building with Rail Track, Rail Switch or Rail Track Ramp: the piece snaps to the nearest free track end. Q changes the shape, R the direction.",,"Halte beim Bauen mit Gleis, Weiche oder Gleisrampe ALT gedrückt: Das Stück rastet am nächsten freien Gleisende ein. Q wechselt die Form, R die Richtung."
+ashenRailsTipSnap_title,UI,Loading Screen,x,,Ashen Rails: Track Building,,Ashen Rails: Gleisbau
+ashenRailsTipTerminal,UI,Loading Screen,x,,Register stations at a Station Terminal. Stations registered by other players can be added to your own list there.,,Am Bahnhofsterminal registrierst du Bahnhöfe. Von anderen Spielern registrierte Bahnhöfe nimmst du dort in deine Liste auf.
+ashenRailsTipTerminal_title,UI,Loading Screen,x,,Ashen Rails: Stations,,Ashen Rails: Bahnhöfe
+ashenRailsTipTimetable,UI,Loading Screen,x,,"With the Timetable mod, press the map key in the locomotive and pick one of your stations. DEPART starts the autopilot.",,Mit dem Fahrplan-Mod drückst du in der Lok die Kartentaste und wählst einen deiner Bahnhöfe. ABFAHRT startet den Autopiloten.
+ashenRailsTipTimetable_title,UI,Loading Screen,x,,Ashen Rails: Timetable,,Ashen Rails: Fahrplan
+ad2RailWagonLore,items,Item,,,Mine Cart,,Lore
+ad2RailWagonLoreDesc,items,Item,,,A mine cart for the train. Couple it at the train console (E on the standing locomotive). Adds 15 rows to the train storage. One per train.,,Eine Lore für den Zug. Wird an der Zugkonsole angehängt (E auf die stehende Lok). Erweitert das Zuglager um 15 Reihen. Eine pro Zug.
+entitycommand_ad2railconsole,UI,Text,,,Train console,,Zugkonsole
+ad2RailConsoleHeader,UI,Text,,,ASHEN RAILS // TRAIN CONSOLE,,ASHEN RAILS // ZUGKONSOLE
+ad2RailConsoleTrain,UI,Text,,,"COUPLED WAGONS, FRONT TO BACK",,"WAGENZUG, VON VORN NACH HINTEN"
+ad2RailConsoleInventory,UI,Text,,,WAGONS IN YOUR INVENTORY,,WAGEN IM INVENTAR
+ad2RailConsoleEmpty,UI,Text,,,NO WAGONS COUPLED.,,KEINE WAGEN ANGEHÄNGT.
+ad2RailConsoleNone,UI,Text,,,NO WAGONS IN YOUR INVENTORY.,,KEINE WAGEN IM INVENTAR.
+ad2RailConsoleBtnUp,UI,Text,,,UP,,HOCH
+ad2RailConsoleBtnDown,UI,Text,,,DOWN,,RUNTER
+ad2RailConsoleBtnOff,UI,Text,,,UNCOUPLE,,ABHÄNGEN
+ad2RailConsoleBtnOn,UI,Text,,,COUPLE,,ANHÄNGEN
+ad2RailConsoleBtnClose,UI,Text,,,CLOSE,,SCHLIESSEN
+ad2RailConsoleRows,UI,Text,,,+{0} ROWS STORAGE,,+{0} REIHEN LAGER
+ad2RailConsoleMsgStorage,UI,Text,,,EMPTY {0} ROWS OF THE TRAIN STORAGE FIRST.,,ERST {0} REIHEN IM ZUGLAGER LEEREN.
+ad2RailConsoleMsgFull,UI,Text,,,NO ROOM IN YOUR INVENTORY.,,KEIN PLATZ IM INVENTAR.
+ad2RailWagonsInUse,UI,Text,,,Someone is using something on a workshop wagon.,,Jemand benutzt gerade etwas auf einem Werkstattwagen.
+ad2RailWagonFlatcar,items,Item,,,Workshop Wagon,,Werkstattwagen
+ad2RailWagonFlatcarDesc,items,Item,,,"A wagon to build on: 2 x 4 blocks, 3 blocks high. Couple it at the train console. When the train stands on straight, level track and the driver gets off, build on it freely: workstations, crates, generators, farm plots. When the train starts, everything on it travels along and is set up again at the next stop. Up to 10 per train.",,"Ein Wagen zum Bebauen: 2 x 4 Blöcke, 3 Blöcke hoch. Wird an der Zugkonsole angehängt. Steht der Zug auf geradem, ebenem Gleis und der Fahrer steigt aus, kannst du frei darauf bauen: Werkstationen, Kisten, Generatoren, Farm Plots. Beim Anfahren fährt alles mit und steht beim nächsten Halt wieder da. Bis zu 10 pro Zug."
+ad2RailConsolePacking,UI,Text,,,PACKING THE WORKSHOP WAGONS...,,WERKSTATTWAGEN WERDEN EINGEPACKT...
+ad2RailConsoleMsgPackFirst,UI,Text,,,WAIT UNTIL THE WORKSHOP WAGONS ARE PACKED.,,"WARTEN, BIS DIE WERKSTATTWAGEN EINGEPACKT SIND."
+ad2RailCargoNotStraight,UI,Text,,,"Workshop wagons can only be built on when the train stands on straight, level track.",,"Auf Werkstattwagen bauen geht nur, wenn der Zug auf geradem, ebenem Gleis steht."
+ad2RailCargoBlocked,UI,Text,,,Something is in the way of the cargo of a workshop wagon.,,Der Ladung eines Werkstattwagens steht etwas im Weg.
+ad2RailCargoOutside,UI,Text,,,{0} reaches over the edge of a workshop wagon.,,{0} ragt über den Rand eines Werkstattwagens.
+ad2RailCargoForbidden,UI,Text,,,{0} cannot travel on a workshop wagon.,,{0} kann nicht auf einem Werkstattwagen mitfahren.
+ad2RailHudKmh,UI,Text,,,km/h,,km/h
+ad2RailHudWagons,UI,Text,,,Workshop wagons,,Werkstattwagen
+ad2RailHudReady,UI,Text,,,ready,,bereit
+ad2RailHudUnpacked,UI,Text,,,unpacked,,aufgebaut
+ad2RailHudCurve,UI,Text,,,curve,,Kurve
+ad2RailHudRamp,UI,Text,,,ramp,,Rampe
+ad2RailHudDiagonal,UI,Text,,,diagonal,,Diagonale
+ad2RailHudNoTrack,UI,Text,,,no track,,kein Gleis
+ashenRailsGuide8Title,UI,Text,,,Credits,,Credits
+ashenRailsGuide8,UI,Text,,,"Ashen Rails uses 3D models by these artists, licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0):\n- Shunting Locomotive and wrecks: ""Train"" by trystyrobot, skfb.ly/pv77E\n- Track pieces, switches and ramps: ""abandoned railroad"" by gav, skfb.ly/otVOr\n- Workshop Wagon: ""Train_flatcar"" by zairiq zairiq, skfb.ly/p8BVL\n- All models were scaled and adapted for the game. Full credits: Credits.txt in the mod folder.",,"Ashen Rails nutzt 3D-Modelle dieser Künstler, lizenziert unter CC BY 4.0 (creativecommons.org/licenses/by/4.0):\n- Rangierlok und Lokwracks: ""Train"" von trystyrobot, skfb.ly/pv77E\n- Gleise, Weichen und Rampen: ""abandoned railroad"" von gav, skfb.ly/otVOr\n- Werkstattwagen: ""Train_flatcar"" von zairiq zairiq, skfb.ly/p8BVL\n- Alle Modelle wurden für das Spiel skaliert und angepasst. Vollständige Credits: Credits.txt im Mod-Ordner."
+ad2RailRwgPanelButton,UI,Text,x,,Ashen Rails,,Ashen Rails
+researchAshenRails,UI,Text,,,Ashen Rails,,Ashen Rails
+researchAshenRailsDesc,UI,Text,,,"Buildable railroad: track, switches, ramps, a diesel shunting locomotive and wagons.",,"Baubare Eisenbahn: Gleise, Weichen, Rampen, eine Diesel-Rangierlok und Wagen."

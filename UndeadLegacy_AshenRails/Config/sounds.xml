@@ -1,0 +1,53 @@
+<configs>
+	<append xpath="/Sounds">
+		<SoundDataNode name="ad2RailLocoHorn">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+			<Noise ID="4" noise="150" time="3" heat_map_strength="6" heat_map_time="90"/>
+			<AudioClip ClipName="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoHorn"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="3"/>
+			<MaxEntities name="6"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="ad2RailLocoRoll">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoRoll" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="ad2RailLocoIdle">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoIdle" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="ad2RailLocoAirStart">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoAirStart"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="ad2RailLocoAirStop">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoAirStop"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+	</append>
+</configs>

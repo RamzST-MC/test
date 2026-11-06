@@ -1,0 +1,30 @@
+================================================================================
+                         ASHEN RAILS - CREDITS
+================================================================================
+
+Ashen Rails uses 3D models by talented artists. All original creators keep
+the rights to their respective works. Our heartfelt thanks go to everyone
+listed here.
+
+
+3D MODELS (Sketchfab)
+================================================================================
+
+  * Shunting Locomotive - "Train" by trystyrobot
+    CC Attribution (CC BY 4.0)
+    https://skfb.ly/pv77E
+    Changes: scaled to the rail track, prepared for use as an in-game vehicle;
+    also used for the locomotive wrecks (rust overlay, window glass and one
+    wheel set removed, posed as wrecks).
+
+  * Rail Track, Curve, Switches and Ramp - "abandoned railroad" by gav
+    CC Attribution (CC BY 4.0)
+    https://skfb.ly/otVOr
+    Changes: scaled, bent and combined into curve, switch and ramp pieces.
+
+  * Workshop Wagon - "Train_flatcar" by zairiq zairiq
+    CC Attribution (CC BY 4.0)
+    https://skfb.ly/p8BVL
+    Changes: shortened, deck scaled to 2 x 4 blocks, bogies scaled to the track gauge.
+
+License text: https://creativecommons.org/licenses/by/4.0/

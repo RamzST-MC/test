@@ -1,0 +1,36 @@
+<configs>
+	<append xpath="/item_modifiers">
+		<item_modifier name="ad2RailModLoreWagon" installable_tags="vrailwagon" modifier_tags="railwagon" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="ad2RailModLoreWagon"/>
+			<property name="DescriptionKey" value="ad2RailModLoreWagonDesc"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="MaxModsAllowed" value="3"/>
+			<property name="StorageRows" value="7,5,3"/>
+			<property name="RailWagonAs" value="ad2RailWagonLore"/>
+		</item_modifier>
+		<item_modifier name="ad2RailModCruise" installable_tags="vrailcruise" modifier_tags="railcruise" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailModCruiseDesc"/>
+			<property name="CustomIcon" value="ad2RailModCruise"/>
+			<property name="EconomicValue" value="1200"/>
+			<property name="MaxModsAllowed" value="1"/>
+		</item_modifier>
+		<item_modifier name="ad2RailModTimetable" installable_tags="vrailtimetable" modifier_tags="railtimetable" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailModTimetableDesc"/>
+			<property name="CustomIcon" value="ad2RailModTimetable"/>
+			<property name="EconomicValue" value="1200"/>
+			<property name="MaxModsAllowed" value="1"/>
+		</item_modifier>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='ad2RailModCruise' or @name='ad2RailModTimetable']">
+		<property name="CarryWeight" value="0.5"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='ad2RailModLoreWagon']">
+		<property name="CarryWeight" value="10"/>
+	</append>
+</configs>

@@ -1,0 +1,9 @@
+<configs>
+	<append xpath="/blockplaceholders">
+		<placeholder name="ad2RailWreckRandomHelper">
+			<block name="ad2RailWreckLoco" prob="1"/>
+			<block name="ad2RailWreckLocoNoAxle" prob="1"/>
+			<block name="ad2RailWreckLocoDerailed" prob="1"/>
+		</placeholder>
+	</append>
+</configs>

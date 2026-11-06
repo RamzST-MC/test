@@ -1,0 +1,863 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="ad2RailTrackStraight">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackStraightDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackStraight_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-1"/>
+			<property name="RailLength" value="2"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="60"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="4" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0100"/>
+		</block>
+		<block name="ad2RailTrackShort">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackShortDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackShort_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-0.5"/>
+			<property name="RailLength" value="1"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="60"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="2" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+		<block name="ad2RailTrackCurve">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackCurveDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackCurve_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="7,1,7"/>
+			<property name="MultiBlockLayer0" value="XX,XXX,XXX,XXXX,XXXXXX,XXXXXXX,XXXXXXX"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="9.424778"/>
+			<property name="RailCurvature" value="0.1666667"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="6"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+		<block name="ad2RailTrackRamp">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRampDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-3"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="RailPlaceAs" value="ad2RailTrackRampPlaced"/>
+			<property name="RailSubgrade" value="concreteShapes:ramp6m0"/>
+			<property name="StabilityIgnore" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+		<block name="ad2RailTrackRampPlaced">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRampDesc"/>
+			<property name="CustomIcon" value="ad2RailTrackRamp"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp_Root.prefab"/>
+			<property name="ModelOffset" value="0,-1,0"/>
+			<property name="MultiBlockDim" value="2,1,6"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-3"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true" param1="ad2RailRampVariantHelper"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="ad2RailTrackRamp8">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRamp8Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp8_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,2,8"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-4"/>
+			<property name="RailLength" value="8"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="RailPlaceAs" value="ad2RailTrackRamp8Placed"/>
+			<property name="RailSubgrade" value="concreteShapes:ramp8m0"/>
+			<property name="StabilityIgnore" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1200"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="13" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+		<block name="ad2RailTrackRamp8Placed">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRamp8Desc"/>
+			<property name="CustomIcon" value="ad2RailTrackRamp8"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp8_Root.prefab"/>
+			<property name="ModelOffset" value="0,-1,0"/>
+			<property name="MultiBlockDim" value="2,1,8"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-4"/>
+			<property name="RailLength" value="8"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1200"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true" param1="ad2RailRampVariantHelper"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="13" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="ad2RailTrackRampFree">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRampFreeDesc"/>
+			<property name="CustomIcon" value="ad2RailTrackRampFree"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp_Root.prefab"/>
+			<property name="ModelOffset" value="0,-1,0"/>
+			<property name="MultiBlockDim" value="2,1,6"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-3"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="RailSupportShape" value="ramp6m0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true" param1="ad2RailRampVariantHelper"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+		<block name="ad2RailTrackRamp8Free">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackRamp8FreeDesc"/>
+			<property name="CustomIcon" value="ad2RailTrackRamp8Free"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackRamp8_Root.prefab"/>
+			<property name="ModelOffset" value="0,-1,0"/>
+			<property name="MultiBlockDim" value="2,1,8"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0,0,-4"/>
+			<property name="RailLength" value="8"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="RailRise" value="1"/>
+			<property name="RailSupportShape" value="ramp8m0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1200"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true" param1="ad2RailRampVariantHelper"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="400"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="13" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+		<block name="ad2RailBarrier">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailBarrier, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailBarrierDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailBarrier_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="RailStopBox" value="-3.2,0,-0.25,0.2,1.0,0.25"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="2"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+		<block name="ad2RailBufferStop">
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailBufferStopDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailBufferStop_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="2"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+		<block name="ad2RailTerminal">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTerminal, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTerminalDesc"/>
+			<property name="CustomIcon" value="cntATMSecure"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Commercial/ATMPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="25000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="690"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="30"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0106"/>
+		</block>
+		<block name="ad2RailTrackSwitchRight">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackSwitchDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackSwitchR_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="7,1,7"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="0.5,0,-0.5"/>
+			<property name="Rail2Length" value="9.424778"/>
+			<property name="Rail2Curvature" value="0.1666667"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+		<block name="ad2RailTrackSwitchLeft">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackSwitchDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackSwitchL_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="7,1,7"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="0.5,0,-0.5"/>
+			<property name="Rail2Length" value="9.424778"/>
+			<property name="Rail2Curvature" value="-0.1666667"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+		<block name="ad2RailTrackDiagonal">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackDiagonalDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackDiagonal_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="5,1,5"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="-0.5,0,-0.5"/>
+			<property name="RailYaw" value="45"/>
+			<property name="RailLength" value="4.242641"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="130"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0106"/>
+		</block>
+		<block name="ad2RailTrackDiagonalShort">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackDiagonalShortDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackDiagonalShort_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,3"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailOwnedHalfWidth" value="0.5"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="-0.5,0,-0.5"/>
+			<property name="RailYaw" value="45"/>
+			<property name="RailLength" value="1.414214"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="60"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="2" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0107"/>
+		</block>
+		<block name="ad2RailTrackCurve45Right">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackCurve45Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackCurve45R_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,5"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLeadIn" value="0.1715729"/>
+			<property name="RailLength" value="5.362966"/>
+			<property name="RailCurvature" value="0.1464466"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="170"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0107"/>
+		</block>
+		<block name="ad2RailTrackCurve45Left">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackCurve45Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackCurve45L_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,5"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLeadIn" value="0.1715729"/>
+			<property name="RailLength" value="5.362966"/>
+			<property name="RailCurvature" value="-0.1464466"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="170"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0108"/>
+		</block>
+		<block name="ad2RailTrackSwitch45Right">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackSwitch45Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackSwitch45R_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,7"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="0.5,0,-0.5"/>
+			<property name="Rail2LeadIn" value="0.1715729"/>
+			<property name="Rail2Length" value="5.362966"/>
+			<property name="Rail2Curvature" value="0.1464466"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0109"/>
+		</block>
+		<block name="ad2RailTrackSwitch45Left">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackSwitch45Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackSwitch45L_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="3,1,7"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="0.5,0,-0.5"/>
+			<property name="Rail2LeadIn" value="0.1715729"/>
+			<property name="Rail2Length" value="5.362966"/>
+			<property name="Rail2Curvature" value="-0.1464466"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0110"/>
+		</block>
+		<block name="ad2RailTrackCrossing">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackCrossingDesc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackCrossing_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="5,1,5"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-1.5"/>
+			<property name="RailLength" value="4"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="-1.5,0,0.5"/>
+			<property name="Rail2Yaw" value="90"/>
+			<property name="Rail2Length" value="4"/>
+			<property name="Rail2Curvature" value="0"/>
+			<property name="RailCrossing" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="120"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0111"/>
+		</block>
+		<block name="ad2RailTrackSwitch3Way45">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="AD2RailTrack, AD2Railroads"/>
+			<property name="DescriptionKey" value="ad2RailTrackSwitch3Way45Desc"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailTrackSwitch3Way45_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="5,1,7"/>
+			<property name="RailAutoCells" value="true"/>
+			<property name="RailOwnedCells" value="true"/>
+			<property name="RailHeight" value="0.186"/>
+			<property name="RailStart" value="0.5,0,-0.5"/>
+			<property name="RailLength" value="6"/>
+			<property name="RailCurvature" value="0"/>
+			<property name="Rail2Start" value="0.5,0,-0.5"/>
+			<property name="Rail2LeadIn" value="0.1715729"/>
+			<property name="Rail2Length" value="5.362966"/>
+			<property name="Rail2Curvature" value="0.1464466"/>
+			<property name="Rail3Start" value="0.5,0,-0.5"/>
+			<property name="Rail3LeadIn" value="0.1715729"/>
+			<property name="Rail3Length" value="5.362966"/>
+			<property name="Rail3Curvature" value="-0.1464466"/>
+			<property name="RailBranchNames" value="ad2RailSwitchStraight,ad2RailSwitchRightState,ad2RailSwitchLeftState"/>
+			<property name="RailIndicators" value="IndicatorStraight,IndicatorDiverge,IndicatorLeft"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="650"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="30" tag="allHarvest,salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B460"/>
+			<property name="SortOrder2" value="0112"/>
+		</block>
+		<block name="ad2RailTrackVariantHelper">
+			<property name="Extends" value="ad2RailTrackStraight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ad2RailTrackStraight"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="ad2RailTrackVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="ad2RailTrackStraight,ad2RailTrackShort,ad2RailTrackDiagonal,ad2RailTrackDiagonalShort,ad2RailTrackCurve,ad2RailTrackCurve45Right,ad2RailTrackCurve45Left,ad2RailTrackCrossing"/>
+			<property name="SortOrder2" value="0098"/>
+		</block>
+		<block name="ad2RailSwitchVariantHelper">
+			<property name="Extends" value="ad2RailTrackSwitchRight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ad2RailTrackSwitchRight"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="ad2RailSwitchVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="ad2RailTrackSwitchRight,ad2RailTrackSwitchLeft,ad2RailTrackSwitch45Right,ad2RailTrackSwitch45Left,ad2RailTrackSwitch3Way45"/>
+			<property name="SortOrder2" value="0099"/>
+		</block>
+		<block name="ad2RailRampVariantHelper">
+			<property name="Extends" value="ad2RailTrackRamp"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ad2RailTrackRamp"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="ad2RailRampVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="ad2RailTrackRamp,ad2RailTrackRamp8,ad2RailTrackRampFree,ad2RailTrackRamp8Free"/>
+			<property name="SortOrder2" value="0099"/>
+		</block>
+		<block name="ad2RailWreckLocoMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AshenRailsWrecks.unity3d?ad2RailWreckLoco_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,3,4"/>
+			<property name="StabilityIgnore" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CanPlayersSpawnOn" value="false"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="ammoGasCan" count="50,200" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.45" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Harvest" name="resourceOil" count="0,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="1,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="12,20" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="3,6" tag="PercMasterySteelHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+			<property name="SortOrder1" value="B460"/>
+		</block>
+		<block name="ad2RailWreckLoco">
+			<property name="Extends" value="ad2RailWreckLocoMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailWreckLocoDesc"/>
+			<property name="DisplayInfo" value="Description"/>
+			<property name="Model" value="#@modfolder:Resources/AshenRailsWrecks.unity3d?ad2RailWreckLoco_Root.prefab"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="ad2RailWreckLocoRepaired"/>
+				<property name="Item" value="ad2RailRepairKitEngine"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="1"/>
+			</property>
+			<property name="SortOrder2" value="0110"/>
+		</block>
+		<block name="ad2RailWreckLocoNoAxle">
+			<property name="Extends" value="ad2RailWreckLocoMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailWreckLocoNoAxleDesc"/>
+			<property name="DisplayInfo" value="Description"/>
+			<property name="Model" value="#@modfolder:Resources/AshenRailsWrecks.unity3d?ad2RailWreckLocoNoAxle_Root.prefab"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="ad2RailWreckLoco"/>
+				<property name="Item" value="ad2RailRepairKitRunningGear"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="1"/>
+			</property>
+			<property name="SortOrder2" value="0111"/>
+		</block>
+		<block name="ad2RailWreckLocoDerailed">
+			<property name="Extends" value="ad2RailWreckLocoMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ad2RailWreckLocoDerailedDesc"/>
+			<property name="Model" value="#@modfolder:Resources/AshenRailsWrecks.unity3d?ad2RailWreckLocoDerailed_Root.prefab"/>
+			<property name="MultiBlockDim" value="3,2,4"/>
+			<property name="SortOrder2" value="0112"/>
+		</block>
+		<block name="ad2RailWreckRandomHelper">
+			<property name="Extends" value="ad2RailWreckLocoMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="ad2RailWreckLoco"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="MultiBlockDim" value="3,3,4"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+		</block>
+		<block name="ad2RailWreckLocoRepaired">
+			<property name="CreativeMode" value="None"/>
+			<property name="DescriptionKey" value="ad2RailWreckLocoRepairedDesc"/>
+			<property name="CustomIcon" value="ad2RailLocoPlaceable"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/AshenRailsWrecks.unity3d?ad2RailWreckLocoRepaired_Root.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,3,4"/>
+			<property name="StabilityIgnore" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CanPlayersSpawnOn" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+			</property>
+			<property name="CanPickup" value="true" param1="ad2RailLocoPlaceable"/>
+			<property name="TakeDelay" value="3"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+	</append>
+	<append xpath="/blocks/block[starts-with(property[@name='Class']/@value, 'AD2RailTrack')]">
+		<property name="VehicleHitScale" value="0.01"/>
+	</append>
+	<append xpath="/blocks/block[@name='ad2RailTrackVariantHelper' or @name='ad2RailTrackStraight' or @name='ad2RailTrackShort' or @name='ad2RailTrackCurve' or @name='ad2RailTrackDiagonal' or @name='ad2RailTrackDiagonalShort' or @name='ad2RailTrackCurve45Right' or @name='ad2RailTrackCurve45Left']">
+		<property name="CarryWeight" value="0.5"/>
+	</append>
+	<append xpath="/blocks/block[@name='ad2RailSwitchVariantHelper' or @name='ad2RailTrackSwitchRight' or @name='ad2RailTrackSwitchLeft' or @name='ad2RailTrackSwitch45Right' or @name='ad2RailTrackSwitch45Left' or @name='ad2RailTrackSwitch3Way45' or @name='ad2RailTrackCrossing']">
+		<property name="CarryWeight" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='ad2RailRampVariantHelper' or @name='ad2RailTrackRamp' or @name='ad2RailTrackRamp8' or @name='ad2RailTrackRampFree' or @name='ad2RailTrackRamp8Free' or @name='ad2RailBufferStop']">
+		<property name="CarryWeight" value="10"/>
+	</append>
+	<append xpath="/blocks/block[@name='ad2RailBarrier']">
+		<property name="CarryWeight" value="20"/>
+	</append>
+	<append xpath="/blocks/block[@name='ad2RailTerminal']">
+		<property name="CarryWeight" value="50"/>
+	</append>
+</configs>

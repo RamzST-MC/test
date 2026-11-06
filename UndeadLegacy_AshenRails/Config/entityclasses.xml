@@ -1,0 +1,25 @@
+<configs>
+	<append xpath="/entity_classes">
+		<entity_class name="ad2RailLoco">
+			<property name="Class" value="EntityAD2RailCart, AD2Railroads"/>
+			<property name="Tags" value="vehicle,usesGas"/>
+			<property name="Prefab" value="#@modfolder:Resources/AD2Railroads.unity3d?ad2RailLocoP.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="ad2RailLoco"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="26"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="3"/>
+			<property name="Explosion.BlockDamage" value="20"/>
+			<property name="Explosion.EntityDamage" value="20"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ad2RailLocoMap"/>
+			<property name="NavObject" value="ad2RailLoco"/>
+		</entity_class>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='ad2RailLoco']">
+		<property name="Consumables" value="ulmAmmoFuelGasoline,ulmAmmoFuelGasolineBarrel"/>
+	</append>
+</configs>

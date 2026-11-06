@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/doc/tips">
+		<tip key="ashenRailsTipSnap"/>
+		<tip key="ashenRailsTipTerminal"/>
+		<tip key="ashenRailsTipTimetable"/>
+	</append>
+</configs>

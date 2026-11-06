@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/worldgeneration/biomes/biome[@name!='underwater']//decorations">
+		<decoration type="block" blockname="ad2RailWreckRandomHelper" prob=".00005" rotatemax="3"/>
+	</append>
+</configs>

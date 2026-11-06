@@ -1,0 +1,19 @@
+<configs>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="windowAD2RailHud" anchor="CenterBottom"/>
+	</append>
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="ad2RailMap">
+			<window name="windowAD2RailMap"/>
+		</window_group>
+		<window_group name="ad2RailTerminal" defaultselected="nameInput">
+			<window name="windowAD2RailTerminal"/>
+		</window_group>
+		<window_group name="ad2RailConsole">
+			<window name="windowAD2RailConsole"/>
+		</window_group>
+		<window_group name="ad2RailGuide">
+			<window name="windowAD2RailGuide"/>
+		</window_group>
+	</append>
+</configs>

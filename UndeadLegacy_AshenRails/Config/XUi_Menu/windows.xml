@@ -1,0 +1,40 @@
+<configs>
+	<append xpath="/windows/window[@name='worldGeneration']/rect[@name='generationControls']">
+		<ulmButtonOption name="btnAshenRailsRwg" pos="238,2" caption_key="ad2RailRwgPanelButton" tooltip_key="ad2RailRwgOptTracksDesc"/>
+	</append>
+	<append xpath="/windows/window[@name='worldGeneration']">
+		<rect name="ad2RailRwgPanel" depth="200" pos="530,-83" size="460,380" visible="false">
+			<sprite depth="0" sprite="menu_empty" color="0,0,0,215" type="sliced" fillcenter="true" size="460,380"/>
+			<sprite depth="1" sprite="menu_empty2px" color="90,90,90,255" type="sliced" fillcenter="false" size="460,380"/>
+			<label depth="2" pos="15,-10" size="430,34" font_size="30" text_key="ad2RailRwgPanelButton" style="outline" justify="left"/>
+			<grid depth="2" pos="15,-55" rows="5" cell_width="425" cell_height="45" repeat_content="false" arrangement="vertical">
+				<rect>
+					<sprite style="inputOptionLabel" sprite="ui_option_label_world"/>
+					<label depth="1" size="150,30" font_size="28" style="hover" text_key="ad2RailRwgOptTracks" tooltip_key="ad2RailRwgOptTracksDesc"/>
+					<ulmComboBox depth="108" pos="160,0" name="ad2RailTracks" type="ComboBoxBool" localization_prefix="ad2RailRwgOnOff" value_wrap="false"/>
+				</rect>
+				<rect>
+					<sprite style="inputOptionLabel" sprite="ui_option_label_world"/>
+					<label depth="1" size="150,30" font_size="28" style="hover" text_key="ad2RailRwgOptStations" tooltip_key="ad2RailRwgOptStationsDesc"/>
+					<ulmComboBox depth="108" pos="160,0" name="ad2RailStations" type="ComboBoxList`1[System.String]" values="Side,Town" localization_prefix="ad2RailRwgStations" value_wrap="false"/>
+				</rect>
+				<rect>
+					<sprite style="inputOptionLabel" sprite="ui_option_label_world"/>
+					<label depth="1" size="150,30" font_size="28" style="hover" text_key="ad2RailRwgOptStops" tooltip_key="ad2RailRwgOptStopsDesc"/>
+					<ulmComboBox depth="108" pos="160,0" name="ad2RailStops" type="ComboBoxList`1[System.String]" values="Normal,Rare,Off" localization_prefix="ad2RailRwgAmount" value_wrap="false"/>
+				</rect>
+				<rect>
+					<sprite style="inputOptionLabel" sprite="ui_option_label_world"/>
+					<label depth="1" size="150,30" font_size="28" style="hover" text_key="ad2RailRwgOptTrader" tooltip_key="ad2RailRwgOptTraderDesc"/>
+					<ulmComboBox depth="108" pos="160,0" name="ad2RailTrader" type="ComboBoxBool" localization_prefix="ad2RailRwgOnOff" value_wrap="false"/>
+				</rect>
+				<rect>
+					<sprite style="inputOptionLabel" sprite="ui_option_label_world"/>
+					<label depth="1" size="150,30" font_size="28" style="hover" text_key="ad2RailRwgOptWrecks" tooltip_key="ad2RailRwgOptWrecksDesc"/>
+					<ulmComboBox depth="108" pos="160,0" name="ad2RailWrecks" type="ComboBoxList`1[System.String]" values="Normal,Rare,Off" localization_prefix="ad2RailRwgAmount" value_wrap="false"/>
+				</rect>
+			</grid>
+			<label depth="2" pos="15,-285" size="430,84" font_size="22" color="255,180,0,255" text_key="ad2RailRwgBetaWarning"/>
+		</rect>
+	</append>
+</configs>
